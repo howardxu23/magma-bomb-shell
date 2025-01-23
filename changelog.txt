@@ -1,0 +1,24 @@
+Version: 1.0.4
+Date: 02. 12. 2024
+  Bugfixes:
+    - attempted fix for image size
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 02. 12. 2024
+  Bugfixes:
+    - corrected the recipe for tiberiam crafting recipe
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 03. 12. 2024
+  Features:
+    - added a recipe if tiberium mod is installed
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 02. 12. 2024
+  Bugfixes:
+    - fixed the dependencies
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 02. 12. 2024
+  Major Features:
+    - Mod Released to the world!

@@ -39,6 +39,28 @@ if mods["space-age"] then
         results = {{type="item", name="howardxu23-magma-bomb-shell", amount=1}}
     }
 end
+--when tiberium mod is active, add alternative crafting for tiberium fluid, also checks the setting for said mod as well
+
+local tiberium_recipe
+
+if mods["Factorio-Tiberium"] and settings.startup["tiberium-crafting-toggle"].value then
+    tiberium_recipe=
+    {
+        type = "recipe",
+        name = "howardxu23-magma-bomb-shell-recipe-tiberium",
+        category = "crafting-with-fluid",
+        energy_required = 30,
+        enabled = false,
+        ingredients =
+        {
+            {type = "item", name = "artillery-shell", amount = 1},
+            {type = "fluid", name = "liquid-tiberium", amount = 200},
+            {type = "item", name = "advanced-circuit", amount = 4}
+        },
+        results = {{type="item", name="howardxu23-magma-bomb-shell", amount=1}}
+    }
+end
+
 data:extend(
 	{
 
@@ -46,7 +68,7 @@ data:extend(
 		{
             type = "ammo",
             name = "howardxu23-magma-bomb-shell",
-            icon = "__Magma-bomb-shell__/graphics/magma-bomb.png",
+            icon = sprite("magma-bomb.png"),
             icon_size=64,
             
             ammo_category = "artillery-shell",
@@ -82,8 +104,8 @@ data:extend(
         },
 
         recipes,
-        vulcanus_recipe
-        
+        vulcanus_recipe,
+        tiberium_recipe
 
     }
 )

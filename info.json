@@ -1,8 +1,9 @@
 {
-	"name": "Magma-bomb-shell",
-	"version": "1.0.1",
+	"name": "Magma-bomb-shell-dev",
+	"version": "1.0.5",
 	"factorio_version": "2.0",
-	"title": "Magma Bomb shell for arty",
+	"title": "Magma Bomb shell for arty [DEV]",
 	"author": "Howardxu23",
-	"description": "Adds magma bomb tipped shells, a powerful plasma explosives that can incinirate virtually everything"
+	"description": "Adds magma bomb tipped shells, a powerful plasma explosives that can incinirate virtually everything",
+	"dependencies": [ "base >= 2.0", "? space-age >= 2.0", "? Factorio-Tiberium >= 2.0" ]
 }
